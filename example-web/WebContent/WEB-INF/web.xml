@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">  <!-- ctrl + space + f -->
+	
+	<!-- 서블릿 컨테이너에 HelloServlet 클래스를 MyHelloServlet 이름으로 등록 -->
+	<servlet>
+		<servlet-name>MyHelloServlet</servlet-name>
+		<servlet-class>com.exampleweb.servlet.HelloServlet</servlet-class>
+	</servlet>
+
+	<!-- /example-web/hello 경로 요청이 발생하면 MyHelloServlet 호출 -->
+	<servlet-mapping>
+		<servlet-name>MyHelloServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+
+	<!-- FilterOne 클래스를 MyFilter라는 이름으로 서블릿 컨테이너에 등록 -->
+	<filter>
+		<filter-name>MyFilter</filter-name>
+		<filter-class>com.exampleweb.filter.FilterOne</filter-class>
+	</filter>
+	<!-- 이름이 MyFilter인 필터를 모든 요청에 적용하는 설정 -->
+	<filter-mapping>
+		<filter-name>MyFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
+</web-app>
+
+
+
+
+
+

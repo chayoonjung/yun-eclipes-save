@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello, Java Web</title>
+</head>
+<body>
+	<h1 style="text-align:center">Hello, Java Web Examples !!!</h1>
+	
+	<h3>1. <a href="hello">Hello World Example</a></h3>
+	<h3>2. <a href="hello2">Hello World Example 2</a></h3>
+	
+	<h3>3. <a href="handle-request?name=장동건&email=jdk@example.com">데이터 전송 테스트 1</a></h3>
+	<!--3번  url rewriting -->
+	<h3>4. 데이터 전송 테스트 2</h3>
+	<!-- action: 전송대상, method: 전송 방식 -->
+	<form action="handle-request" method="post">
+		이름 : <input type="text" name="name"><br>
+		메일 : <input type="text" name="email"><br>
+		<input type="submit" value="전송">
+	</form>
+	
+	<h3>5. 데이터 전송 테스트 3</h3>
+	<form action="handle-request" method="get">
+		이름 : <input type="text" name="name"><br>
+		메일 : <input type="text" name="email"><br>
+		<input type="submit" value="전송">
+	</form>
+	
+	<hr>
+	
+	<h3>6. <a href="member-list">회원 목록 (서블릿이 응답 HTML 생산)</a></h3>
+	
+	<h3>7. <a href="01.member-list.jsp">회원 목록 (JSP가 응답 HTML 생산)</a></h3>
+	
+	<h3>8. <a href="02.structure.jsp">JSP 페이지 구성</a></h3>
+	
+	<h3>9. <a href="02.lotto.jsp">당첨 예상 번호 (JSP 연습)</a></h3>
+	
+	<h3>10. <a href="03.jsp-object.jsp">JSP 내장 객체(임시저장)</a></h3>
+	
+	<h3>11-1. <a href="04.forward.jsp">Forward</a></h3>
+	<h3>11-2. <a href="04.redirect.jsp">Redirect</a></h3>
+	
+	<h3>12. <a href="model2">요청 처리와 응답컨텐츠 생성 분리</a></h3>
+	
+	<h3>13. <a href="06.statemanagement.jsp">상태 관리 (세션과 쿠키)</a></h3>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
